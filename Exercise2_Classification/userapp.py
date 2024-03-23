@@ -74,12 +74,37 @@ entry_battery = tkinter.Entry(window)
 entry_battery.pack(pady=0)
 
 # make a text label for the second Entry
+#label2 = tkinter.Label(window, text="Dual SIM (0/1)")
+#label2.pack(pady=3)
+
+# Creating our text widget.
+#entry_dualsim = tkinter.Entry(window)
+#entry_dualsim.pack(pady=0)
+
+def show(): 
+	label2.config( text = clicked.get() ) 
+
+# Dropdown menu options 
+options = [ 
+	" ",
+	"0", 
+	"1", 
+] 
+
+# datatype of menu text 
+clicked = tkinter.StringVar() 
+
+# Create Dropdown menu 
+drop = tkinter.OptionMenu( window , clicked , *options ) 
+drop.pack(pady=3) 
+
 label2 = tkinter.Label(window, text="Dual SIM (0/1)")
 label2.pack(pady=3)
 
 # Creating our text widget.
 entry_dualsim = tkinter.Entry(window)
 entry_dualsim.pack(pady=0)
+
 
 # make a text label for the third Entry
 label3 = tkinter.Label(window, text="Front cam (mpx)")
@@ -170,7 +195,7 @@ entry_talktime.pack(pady=0)
 def set_text_by_button():
     tester_row = {
         'battery_power': int(entry_battery.get()), 
-        'dual_sim': int(entry_dualsim.get()),
+        'dual_sim': int(clicked.get()),
         'fc': int(entry_frontcam.get()), 
         'int_memory': int(entry_intmemory.get()), 
         'n_cores': int(entry_cores.get()), 
