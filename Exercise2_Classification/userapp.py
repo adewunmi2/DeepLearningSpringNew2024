@@ -73,14 +73,6 @@ label1.pack(pady=3)
 entry_battery = tkinter.Entry(window)
 entry_battery.pack(pady=0)
 
-# make a text label for the second Entry
-#label2 = tkinter.Label(window, text="Dual SIM (0/1)")
-#label2.pack(pady=3)
-
-# Creating our text widget.
-#entry_dualsim = tkinter.Entry(window)
-#entry_dualsim.pack(pady=0)
-
 def show(): 
 	label2.config( text = clicked.get() ) 
 
@@ -91,24 +83,23 @@ options = [
 	"1", 
 ] 
 
+label2 = tkinter.Label(window, text="Dual SIM (0/1)")
+label2.pack(pady=2)
+
+# Creating our text widget.
+#entry_dualsim = tkinter.Entry(window)
+#entry_dualsim.pack(pady=0)
+
 # datatype of menu text 
 clicked = tkinter.StringVar() 
 
 # Create Dropdown menu 
 drop = tkinter.OptionMenu( window , clicked , *options ) 
-drop.pack(pady=3) 
-
-label2 = tkinter.Label(window, text="Dual SIM (0/1)")
-label2.pack(pady=3)
-
-# Creating our text widget.
-entry_dualsim = tkinter.Entry(window)
-entry_dualsim.pack(pady=0)
-
+drop.pack(pady=2) 
 
 # make a text label for the third Entry
 label3 = tkinter.Label(window, text="Front cam (mpx)")
-label3.pack(pady=3)
+label3.pack(pady=2)
 
 # Creating our text widget.
 entry_frontcam = tkinter.Entry(window)
@@ -116,7 +107,7 @@ entry_frontcam.pack(pady=0)
 
 # make a text label for the fourth Entry
 label4 = tkinter.Label(window, text="Internal memory / storage (Gb)")
-label4.pack(pady=3)
+label4.pack(pady=2)
 
 # Creating our text widget.
 entry_intmemory = tkinter.Entry(window)
@@ -124,7 +115,7 @@ entry_intmemory.pack(pady=0)
 
 # make a text label for the fifth Entry
 label5 = tkinter.Label(window, text="Amount of cores")
-label5.pack(pady=3)
+label5.pack(pady=2)
 
 # Creating our text widget.
 entry_cores = tkinter.Entry(window)
@@ -132,7 +123,7 @@ entry_cores.pack(pady=0)
 
 # make a text label for the sixth Entry
 label6 = tkinter.Label(window, text="Primary camera (mpx)")
-label6.pack(pady=3)
+label6.pack(pady=2)
 
 # Creating our text widget.
 entry_primarycam= tkinter.Entry(window)
@@ -140,7 +131,7 @@ entry_primarycam.pack(pady=0)
 
 # make a text label for the seveth Entry
 label7 = tkinter.Label(window, text="Height (px)")
-label7.pack(pady=3)
+label7.pack(pady=2)
 
 # Creating our text widget.
 entry_pixelh = tkinter.Entry(window)
@@ -148,7 +139,7 @@ entry_pixelh.pack(pady=0)
 
 # make a text label for the eight Entry
 label8 = tkinter.Label(window, text="Width (px)")
-label8.pack(pady=3)
+label8.pack(pady=2)
 
 # Creating our text widget.
 entry_pixelw = tkinter.Entry(window)
@@ -156,7 +147,7 @@ entry_pixelw.pack(pady=0)
 
 # make a text label for the ninth Entry
 label9 = tkinter.Label(window, text="RAM (Mb)")
-label9.pack(pady=3)
+label9.pack(pady=2)
 
 # Creating our text widget.
 entry_ram = tkinter.Entry(window)
@@ -164,7 +155,7 @@ entry_ram.pack(pady=0)
 
 # make a text label for the tenth Entry
 label10 = tkinter.Label(window, text="Screen height (cm)")
-label10.pack(pady=3)
+label10.pack(pady=2)
 
 # Creating our text widget.
 entry_screenh = tkinter.Entry(window)
@@ -172,7 +163,7 @@ entry_screenh.pack(pady=0)
 
 # make a text label for the eleventh Entry
 label11 = tkinter.Label(window, text="Screen width (cm)")
-label11.pack(pady=3)
+label11.pack(pady=2)
 
 # Creating our text widget.
 entry_screenw = tkinter.Entry(window)
@@ -180,7 +171,7 @@ entry_screenw.pack(pady=0)
 
 # make a text label for the twelfth Entry
 label12 = tkinter.Label(window, text="Talk time (hours)")
-label12.pack(pady=3)
+label12.pack(pady=2)
 
 # Creating our text widget.
 entry_talktime = tkinter.Entry(window)
